@@ -44,9 +44,8 @@ const Form = () => {
           }}
         />
         <br />
-
+        <p id="errorMessage">{error.name}</p>
         <button type="submit">Submit</button>
-        <p>{error.name}</p>
       </form>
     </div>
   );
