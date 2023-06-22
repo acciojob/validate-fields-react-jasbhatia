@@ -19,6 +19,8 @@ const Form = () => {
       seterror(err);
     } else {
       seterror({});
+      setName("");
+      setPwd("");
     }
   }
   return (
@@ -31,13 +33,14 @@ const Form = () => {
           onChange={(e) => {
             setName(e.target.value);
           }}
+          value={name}
         />
         <br />
         <label htmlFor="pwd">Password:</label>
 
         <input
           type="password"
-          name=""
+          value={pwd}
           id="pwd"
           onChange={(e) => {
             setPwd(e.target.value);
