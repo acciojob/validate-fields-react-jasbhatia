@@ -47,7 +47,9 @@ const Form = () => {
           }}
         />
         <br />
-        <p id="errorMessage">{error.name}</p>
+        <p id="errorMessage" style={{ color: red }}>
+          {error.name}
+        </p>
         <button type="submit">Submit</button>
       </form>
     </div>
